@@ -1,0 +1,13 @@
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.Repository.deps.json
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.Repository.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.Repository.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.DatabaseContext.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.Model.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.DatabaseContext.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\bin\Release\netstandard2.0\SchoolManagmentSystem.Model.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.csprojAssemblyReference.cache
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.AssemblyInfoInputs.cache
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.AssemblyInfo.cs
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.csproj.CopyComplete
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Repository\obj\Release\netstandard2.0\SchoolManagmentSystem.Repository.pdb

@@ -1,0 +1,15 @@
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.BLL.deps.json
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.BLL.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.BLL.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.DatabaseContext.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.Model.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.Repository.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.Model.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.Repository.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\bin\Debug\netstandard2.0\SchoolManagmentSystem.DatabaseContext.pdb
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.csprojAssemblyReference.cache
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.AssemblyInfoInputs.cache
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.AssemblyInfo.cs
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.csproj.CopyComplete
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.dll
+F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.BLL\obj\Debug\netstandard2.0\SchoolManagmentSystem.BLL.pdb
