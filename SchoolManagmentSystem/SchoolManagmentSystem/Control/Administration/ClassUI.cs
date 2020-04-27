@@ -9,11 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SchoolManagmentSystem.Model.Model.Administration;
 using SchoolManagmentSystem.BLL.BLL.Administration;
+using Tulpep.NotificationWindow;
 
 namespace SchoolManagmentSystem
 {
     public partial class ClassUI : UserControl
     {
+        PopupNotifier popup = new PopupNotifier();
+
+        private void Notify(string title, string cont)
+        {
+            popup.Image = Properties.Resources.Notification;
+            popup.TitleText = title;
+            popup.ContentText = cont;
+            popup.Popup();
+        }
         Class _class = new Class();
         ClassManager _classManager = new ClassManager();
         private int classId;
@@ -37,7 +47,7 @@ namespace SchoolManagmentSystem
                 _class.EntryBy = "admin";
                 if(_classManager.Add(_class))
                 {
-                    MessageBox.Show("Added Successfully");
+                    Notify("Section Added Successfully !", "Section " + textBoxClassName.Text+" Added Successfully");
                 }
                 AllTextBoxClear();
                 FillDataGridView();
@@ -72,7 +82,8 @@ namespace SchoolManagmentSystem
 
                 if(_classManager.Update(_class))
                 {
-                    MessageBox.Show("Updated Successfully");
+                    //MessageBox.Show("Updated Successfully");
+                    Notify("Section Updated Successfully !", "Section "+textBoxClassName.Text + " Updated Successfully");
                 }
                 AllTextBoxClear();
                 FillDataGridView();
@@ -84,7 +95,8 @@ namespace SchoolManagmentSystem
             _class = _classManager.GetById(classId);
             if (_classManager.Delete(_class))
             {
-                MessageBox.Show("Delete Successfully");
+                //MessageBox.Show("Delete Successfully");
+                Notify(""," Section Delete Successfully !");
             }
             AllTextBoxClear();
             FillDataGridView();

@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{13ABBEB2-96BB-4802-858A-84B2A21CFC7B}</ProjectGuid>
+    <ProjectGuid>{3C3F3F14-938D-4C18-A262-759A6DED3F3F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SchoolManagmentSystem</RootNamespace>
     <AssemblyName>SchoolManagmentSystem</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,111 +53,108 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.31.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.31\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminUI.Designer.cs">
+    <Compile Include="AdminUI.designer.cs">
       <DependentUpon>AdminUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\Administration\ClassUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Administration\ClassUI.Designer.cs">
+    <Compile Include="Control\Administration\ClassUI.designer.cs">
       <DependentUpon>ClassUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Control\Administration\SectionUI.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Control\Administration\SectionUI.Designer.cs">
-      <DependentUpon>SectionUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\Administration\GroupUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Administration\GroupUI.Designer.cs">
+    <Compile Include="Control\Administration\GroupUI.designer.cs">
       <DependentUpon>GroupUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\Administration\SubjectUI.cs">
+    <Compile Include="Control\Administration\SectionUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Administration\SubjectUI.Designer.cs">
-      <DependentUpon>SubjectUI.cs</DependentUpon>
+    <Compile Include="Control\Administration\SectionUI.designer.cs">
+      <DependentUpon>SectionUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\Administration\ShiftUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Administration\ShiftUI.Designer.cs">
+    <Compile Include="Control\Administration\ShiftUI.designer.cs">
       <DependentUpon>ShiftUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Administration\SubjectUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Administration\SubjectUI.designer.cs">
+      <DependentUpon>SubjectUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\Attendance\EmployeeAttendance.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Attendance\EmployeeAttendance.Designer.cs">
+    <Compile Include="Control\Attendance\EmployeeAttendance.designer.cs">
       <DependentUpon>EmployeeAttendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\Attendance\StudentAttendance.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Attendance\StudentAttendance.Designer.cs">
+    <Compile Include="Control\Attendance\StudentAttendance.designer.cs">
       <DependentUpon>StudentAttendance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Control\PIMS\MoreEmployeeDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Control\PIMS\MoreEmployeeDetails.Designer.cs">
-      <DependentUpon>MoreEmployeeDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Control\PIMS\EmployeeRegistration.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Control\PIMS\EmployeeRegistration.Designer.cs">
-      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\PIMS\EmployeeList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\PIMS\EmployeeList.Designer.cs">
+    <Compile Include="Control\PIMS\EmployeeList.designer.cs">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\PIMS\StudentList.cs">
+    <Compile Include="Control\PIMS\EmployeeRegistration.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\PIMS\StudentList.Designer.cs">
-      <DependentUpon>StudentList.cs</DependentUpon>
+    <Compile Include="Control\PIMS\EmployeeRegistration.designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PIMS\MoreEmployeeDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PIMS\MoreEmployeeDetails.designer.cs">
+      <DependentUpon>MoreEmployeeDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\PIMS\StudentAddmision.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\PIMS\StudentAddmision.Designer.cs">
+    <Compile Include="Control\PIMS\StudentAddmision.designer.cs">
       <DependentUpon>StudentAddmision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PIMS\StudentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PIMS\StudentList.designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserLoginUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserLoginUI.Designer.cs">
-      <DependentUpon>UserLoginUI.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AdminUI.resx">
       <DependentUpon>AdminUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\Administration\ClassUI.resx">
       <DependentUpon>ClassUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\Administration\SectionUI.resx">
-      <DependentUpon>SectionUI.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Control\Administration\GroupUI.resx">
       <DependentUpon>GroupUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\Administration\SubjectUI.resx">
-      <DependentUpon>SubjectUI.cs</DependentUpon>
+    <EmbeddedResource Include="Control\Administration\SectionUI.resx">
+      <DependentUpon>SectionUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\Administration\ShiftUI.resx">
       <DependentUpon>ShiftUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Administration\SubjectUI.resx">
+      <DependentUpon>SubjectUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\Attendance\EmployeeAttendance.resx">
       <DependentUpon>EmployeeAttendance.cs</DependentUpon>
@@ -166,20 +162,20 @@
     <EmbeddedResource Include="Control\Attendance\StudentAttendance.resx">
       <DependentUpon>StudentAttendance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\PIMS\MoreEmployeeDetails.resx">
-      <DependentUpon>MoreEmployeeDetails.cs</DependentUpon>
+    <EmbeddedResource Include="Control\PIMS\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\PIMS\EmployeeRegistration.resx">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\PIMS\EmployeeList.resx">
-      <DependentUpon>EmployeeList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\PIMS\StudentList.resx">
-      <DependentUpon>StudentList.cs</DependentUpon>
+    <EmbeddedResource Include="Control\PIMS\MoreEmployeeDetails.resx">
+      <DependentUpon>MoreEmployeeDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\PIMS\StudentAddmision.resx">
       <DependentUpon>StudentAddmision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PIMS\StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -189,22 +185,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserLoginUI.resx">
-      <DependentUpon>UserLoginUI.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Class.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Class1.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Group.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Group1.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Section.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Section1.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Shift.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Administration.Subject.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Others.District.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Others.Division.datasource" />
-    <None Include="Properties\DataSources\SchoolManagmentSystem.Model.Model.Others.Upazila.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -220,16 +203,28 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SchoolManagmentSystem.BLL\SchoolManagmentSystem.BLL.csproj">
-      <Project>{4d612f10-28e8-4c3b-b9da-87385357c76f}</Project>
+      <Project>{a7101b7c-6ec0-48b6-9c8c-e2afe6799f3e}</Project>
       <Name>SchoolManagmentSystem.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\SchoolManagmentSystem.Model\SchoolManagmentSystem.Model.csproj">
-      <Project>{0bf4c1e3-010f-4cfc-b737-8624984dbfef}</Project>
+      <Project>{7b8fc8ac-79a7-40db-a526-a68ceac91ada}</Project>
       <Name>SchoolManagmentSystem.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

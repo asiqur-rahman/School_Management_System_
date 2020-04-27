@@ -1,16 +1,77 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{276D75D6-12D9-4669-8456-A34B46286F91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolManagmentSystem.Repository</RootNamespace>
+    <AssemblyName>SchoolManagmentSystem.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\SchoolManagmentSystem.DatabaseContext\SchoolManagmentSystem.DatabaseContext.csproj" />
-    <ProjectReference Include="..\SchoolManagmentSystem.Model\SchoolManagmentSystem.Model.csproj" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Administration\ClassRepository.cs" />
+    <Compile Include="Repository\Administration\GroupRepository.cs" />
+    <Compile Include="Repository\Administration\SectionRepository.cs" />
+    <Compile Include="Repository\Administration\ShiftRepository.cs" />
+    <Compile Include="Repository\Administration\SubjectRepository.cs" />
+    <Compile Include="Repository\LoginRepository.cs" />
+    <Compile Include="Repository\Others\DistrictRepository.cs" />
+    <Compile Include="Repository\Others\DivisionRepository.cs" />
+    <Compile Include="Repository\Others\UpazilaRepository.cs" />
+    <Compile Include="Repository\PIMS\StudentInfoRepository.cs" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolManagmentSystem.DatabaseContext\SchoolManagmentSystem.DatabaseContext.csproj">
+      <Project>{fa610d79-67e9-49a5-9288-2d9a5f2d42b2}</Project>
+      <Name>SchoolManagmentSystem.DatabaseContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolManagmentSystem.Model\SchoolManagmentSystem.Model.csproj">
+      <Project>{7b8fc8ac-79a7-40db-a526-a68ceac91ada}</Project>
+      <Name>SchoolManagmentSystem.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

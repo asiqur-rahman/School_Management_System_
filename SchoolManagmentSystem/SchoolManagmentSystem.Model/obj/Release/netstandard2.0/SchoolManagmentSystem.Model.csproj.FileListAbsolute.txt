@@ -1,7 +1,0 @@
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\bin\Release\netstandard2.0\SchoolManagmentSystem.Model.deps.json
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\bin\Release\netstandard2.0\SchoolManagmentSystem.Model.dll
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\bin\Release\netstandard2.0\SchoolManagmentSystem.Model.pdb
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\obj\Release\netstandard2.0\SchoolManagmentSystem.Model.AssemblyInfoInputs.cache
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\obj\Release\netstandard2.0\SchoolManagmentSystem.Model.AssemblyInfo.cs
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\obj\Release\netstandard2.0\SchoolManagmentSystem.Model.dll
-F:\School Managment Project\SchoolManagmentSystem\SchoolManagmentSystem.Model\obj\Release\netstandard2.0\SchoolManagmentSystem.Model.pdb

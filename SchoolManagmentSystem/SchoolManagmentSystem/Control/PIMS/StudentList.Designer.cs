@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.showButton = new FontAwesome.Sharp.IconButton();
             this.textBoxRollNo = new System.Windows.Forms.TextBox();
             this.comboBoxGroup = new System.Windows.Forms.ComboBox();
             this.comboBoxSection = new System.Windows.Forms.ComboBox();
@@ -37,12 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.showButton = new FontAwesome.Sharp.IconButton();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,6 +62,47 @@
             this.groupBox1.Size = new System.Drawing.Size(1201, 159);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.Location = new System.Drawing.Point(782, 20);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(346, 27);
+            this.textBoxName.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(691, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Name";
+            // 
+            // showButton
+            // 
+            this.showButton.BackColor = System.Drawing.Color.Gray;
+            this.showButton.FlatAppearance.BorderSize = 0;
+            this.showButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.showButton.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.showButton.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.showButton.IconSize = 32;
+            this.showButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.showButton.Location = new System.Drawing.Point(886, 116);
+            this.showButton.Name = "showButton";
+            this.showButton.Rotation = 0D;
+            this.showButton.Size = new System.Drawing.Size(121, 32);
+            this.showButton.TabIndex = 4;
+            this.showButton.Text = "Show";
+            this.showButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.showButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.showButton.UseVisualStyleBackColor = false;
             // 
             // textBoxRollNo
             // 
@@ -144,69 +183,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Class";
             // 
-            // showButton
-            // 
-            this.showButton.BackColor = System.Drawing.Color.Gray;
-            this.showButton.FlatAppearance.BorderSize = 0;
-            this.showButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.showButton.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.showButton.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.showButton.IconSize = 32;
-            this.showButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.showButton.Location = new System.Drawing.Point(886, 116);
-            this.showButton.Name = "showButton";
-            this.showButton.Rotation = 0D;
-            this.showButton.Size = new System.Drawing.Size(121, 32);
-            this.showButton.TabIndex = 4;
-            this.showButton.Text = "Show";
-            this.showButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.showButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.showButton.UseVisualStyleBackColor = false;
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(782, 20);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(346, 27);
-            this.textBoxName.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(691, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Name";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 204);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1201, 683);
-            this.dataGridView1.TabIndex = 1;
-            // 
             // StudentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "StudentList";
             this.Size = new System.Drawing.Size(1267, 890);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,6 +211,5 @@
         private FontAwesome.Sharp.IconButton showButton;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

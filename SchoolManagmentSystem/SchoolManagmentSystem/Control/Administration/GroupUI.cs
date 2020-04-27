@@ -9,11 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SchoolManagmentSystem.Model.Model.Administration;
 using SchoolManagmentSystem.BLL.BLL.Administration;
+using Tulpep.NotificationWindow;
 
 namespace SchoolManagmentSystem
 {
     public partial class GroupUI : UserControl
     {
+        PopupNotifier popup = new PopupNotifier();
+        private void Notify(string title, string cont)
+        {
+            popup.TitleText = title;
+            popup.ContentText = cont;
+            popup.Popup();
+        }
         Group _group = new Group();
         GroupManager _groupManager = new GroupManager();
         private int groupId;
@@ -75,7 +83,8 @@ namespace SchoolManagmentSystem
                 _group.EntryBy = "admin";
                 if (_groupManager.Add(_group))
                 {
-                    MessageBox.Show("Added Successfully");
+                    //MessageBox.Show("Added Successfully");
+                    Notify("Group Added Successfully !", "Group " + textBoxGroupName.Text + " Added Successfully");
                 }
                 AllTextBoxClear();
                 FillDataGridView();
@@ -91,7 +100,8 @@ namespace SchoolManagmentSystem
                 _group.EntryBy = "admin";
                 if (_groupManager.Update(_group))
                 {
-                    MessageBox.Show("Updated Successfully");
+                    //MessageBox.Show("Updated Successfully");
+                    Notify("Group Updated Successfully !", "Group " + textBoxGroupName.Text + " Updated Successfully");
                 }
                 AllTextBoxClear();
                 FillDataGridView();
@@ -104,7 +114,8 @@ namespace SchoolManagmentSystem
             _group = _groupManager.GetById(groupId);
             if (_groupManager.Delete(_group))
             {
-                MessageBox.Show("Delete Successfully");
+                //MessageBox.Show("Delete Successfully");
+                Notify("Group Deleted Successfully !", "Group " + textBoxGroupName.Text + " Deleted Successfully");
             }
             AllTextBoxClear();
             FillDataGridView();
